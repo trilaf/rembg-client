@@ -1,10 +1,10 @@
 # Usage
 
 ### Create virtual environment
-python -m venv .venv
+> python -m venv .venv
 
 ### Activate virtual environment
-#### Linux
+#### Linux or macOS
 > source .venv/bin/activate
 
 #### Windows CMD
@@ -17,4 +17,4 @@ python -m venv .venv
 > source .venv/Scripts/activate
 
 ### Run
-python3 main.py input_image
+> python3 main.py input_image_path
