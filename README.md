@@ -16,5 +16,8 @@
 #### Windows using Unix Like Shell (ex: Git Bash CLI)
 > source .venv/Scripts/activate
 
+### Install rembg package
+> pip install -U rembg
+
 ### Run
-> python3 main.py input_image_path
+> python main.py input_image_path
