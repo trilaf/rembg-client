@@ -17,6 +17,7 @@ def rembg_main(input_path = ""):
   if len(input_path) == 0:
     print("Input path not specified")
     return
+  input_path = input_path.replace("/" if os.name == "nt" else "\\", "\\" if os.name == "nt" else "/")
   output_path = set_output_path(input_path)
   try:
     with open(input_path, 'rb') as i:
@@ -28,7 +29,7 @@ def rembg_main(input_path = ""):
           o.write(output)
           print(f"\nImage output location: {output_path}")
           return
-      except FileNotFoundError:
+      except:
         print("Error: Output path maybe invalid")
         return
   except FileNotFoundError:
